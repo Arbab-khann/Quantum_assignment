@@ -1,0 +1,63 @@
+/* header styling */
+.heading {
+  position: absolute;
+  top: 3.5rem;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: white;
+
+  font-size: 3rem;
+}
+
+/* table styling */
+
+table {
+  position: absolute;
+  margin-top: 1.5rem !important;
+  width: 90%;
+  top: 150px;
+  left: 70px;
+}
+table thead tr {
+  height: 3rem;
+}
+.details td {
+  height: 2.5rem;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+table,
+th,
+td {
+  border: 1px solid rgba(187, 185, 185, 0.635);
+  border-collapse: collapse;
+}
+th,
+td {
+  background-color: #96d4d4;
+}
+.e-name {
+  width: 150px;
+}
+
+/* back btn styling */
+
+#back-to-Signup {
+  width: 8rem;
+  background-color: white;
+  height: 2.2rem;
+  position: absolute;
+  right: 1rem;
+  top: 47px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+#back-to-Signup p {
+  color: #000000;
+  font-weight: 600;
+}
