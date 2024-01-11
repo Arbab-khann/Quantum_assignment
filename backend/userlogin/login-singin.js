@@ -15,7 +15,7 @@ const register = async (req, res) => {
     password: data.password,
     dob: data.dob,
   };
-  console.log("line 16", storeData);
+  // console.log("line 16", storeData);
 
   // finding user is alredy register or not
 
@@ -59,7 +59,7 @@ const login = (req, res) => {
     let validate = bcrypt.compareSync(logindata.password, findAcc.password);
     if (validate) {
       const token = jwt.sign({ user: logindata.email }, process.env.secretkey, {
-        expiresIn: "36000",
+        expiresIn: "360000",
       });
       return res.send({ msg: "user login successfull", jwttoken: token });
       console.log("user login successfull");
