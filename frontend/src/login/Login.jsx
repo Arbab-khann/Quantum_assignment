@@ -87,6 +87,15 @@ function Login() {
 
           <div className="login">
             <form className="form">
+              <p
+                style={{ color: "white", fontWeight: "200" }}
+                onClick={() => {
+                  navi("/register");
+                }}
+                className="log-in register-btn"
+              >
+                Signup?
+              </p>
               <label htmlFor="chk" aria-hidden="true">
                 Log in
               </label>

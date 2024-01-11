@@ -52,7 +52,7 @@ const login = (req, res) => {
   // if not find the send response to enter right details
   if (!findAcc) {
     return res.send({ msg: "enter right email" });
-    console.log("enter right email");
+    // console.log("enter right email");
 
     // otherwise run thtis part and user will login successful with correct details
   } else {
@@ -62,10 +62,10 @@ const login = (req, res) => {
         expiresIn: "360000",
       });
       return res.send({ msg: "user login successfull", jwttoken: token });
-      console.log("user login successfull");
+      // console.log("user login successfull");
     } else {
       return res.send({ msg: "enter correct password" });
-      console.log("enter correct password");
+      // console.log("enter correct password");
     }
   }
 };

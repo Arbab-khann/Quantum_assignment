@@ -103,6 +103,14 @@ function Register() {
 
         <div className="register">
           <form className="form">
+            <p
+              onClick={() => {
+                navi("/login");
+              }}
+              className="log-in"
+            >
+              Login?
+            </p>
             <label htmlFor="chk" aria-hidden="true">
               Register
             </label>

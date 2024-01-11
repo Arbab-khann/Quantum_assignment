@@ -5,7 +5,6 @@ const dotenv = require("dotenv");
 dotenv.config();
 
 // for register
-
 route.post("/register", register);
 // for login
 route.post("/login", login);

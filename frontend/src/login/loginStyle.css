@@ -75,6 +75,16 @@ label {
   transform: translateY(5%);
   transition: 0.8s ease-in-out;
 }
+.log-in {
+  color: #573b8a;
+  position: absolute;
+  right: 1rem;
+  top: 1.5rem;
+  font-weight: 900;
+  cursor: pointer;
+
+  border-radius: 10px;
+}
 
 .register label {
   color: #573b8a;
@@ -135,13 +145,13 @@ label {
 }
 
 .login-button {
-  background-color: #4caf50; /* Green background color */
-  color: white; /* White text color */
-  padding: 10px 20px; /* Padding around the button text */
-  font-size: 16px; /* Font size of the button text */
-  cursor: pointer; /* Add cursor pointer on hover */
-  border: none; /* Remove border */
-  border-radius: 5px; /* Optional: Add border radius for a rounded look */
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
   width: 10rem;
   margin-top: 5rem;
 }

@@ -28,8 +28,8 @@ function Adminpage() {
 
   // making a function for delete functionality
   const handleDelete = async (id) => {
-    details();
     await axios.delete("http://localhost:5050/delete/" + id);
+    details();
     toast.success("Removed", {
       position: "top-center",
       autoClose: 1000,
