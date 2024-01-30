@@ -3,8 +3,6 @@ const saltround = 10;
 const jwt = require("jsonwebtoken");
 const details = require("../mongoDB/mongoDB");
 
-let arry = [];
-
 // register page
 const register = async (req, res) => {
   const data = req.body;
@@ -19,7 +17,7 @@ const register = async (req, res) => {
 
   // finding user is alredy register or not
 
-  let findAcc = arry.find((item) => item.email == data.email);
+  let findAcc = await details.findOne({ email: data.email });
   if (findAcc) {
     return res.send({ msg: "email alredy exist, try new email" });
   }
@@ -43,11 +41,11 @@ const register = async (req, res) => {
 };
 
 // login page
-const login = (req, res) => {
+const login = async (req, res) => {
   const logindata = req.body;
 
   // finding login user deatails in mongo server he/she is register or not
-  let findAcc = arry.find((item) => item.email == logindata.email);
+  let findAcc = await details.findOne({ email: logindata.email });
 
   // if not find the send response to enter right details
   if (!findAcc) {

@@ -16,7 +16,7 @@ function Register() {
   async function submit(e) {
     e.preventDefault();
     if (name === "") {
-      toast.error("Fill all details", {
+      toast.success("Fill all details", {
         position: "top-center",
         autoClose: 1500,
         hideProgressBar: false,
